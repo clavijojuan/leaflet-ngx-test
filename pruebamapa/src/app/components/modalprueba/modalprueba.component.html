@@ -1,0 +1,17 @@
+<p-dialog [(visible)]="display" [closable]=closable [modal]=!closable>
+  <ng-template pTemplate="header">
+    <b>
+      Punto referencia
+    </b>
+  </ng-template>
+  <div class="card-content" #contentHTML>
+    Las coordenadas son: Latitud = {{coords.lat}}, Longitud = {{coords.lng}}
+    <br/>
+    <br/>
+
+    <input type="text" pInputText [(ngModel)]="test" />
+  </div>
+  <p-footer>
+    <p-button icon="pi pi-times" (click)="saveDialog()" label="Guardar"></p-button>
+  </p-footer>
+</p-dialog>

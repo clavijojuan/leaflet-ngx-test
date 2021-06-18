@@ -1,0 +1,7 @@
+<div id="map"></div>
+<app-modalprueba 
+  [display]=display 
+  [coords]=coords 
+  [onClose]=onCloseModal.bind(this) 
+  [data]=pointData
+  (saveData)="saveData($event)"></app-modalprueba>
